@@ -12,65 +12,71 @@ public class Dispositivo {
     private String sistemaOperativo;
     private String tamanioPantalla;
     private double costoInicial;
-    private double iva;
-    private int numeroSedes;
+    private double ivaPorcentaje;
+    private double ivaCosto;
+    private double costoFinal;
+    private String direccionMac;
+    private String imei;
 
 
-    public void establecerNombreInstitucion(String c) {
-        nombreInstitucion = c;
+    public void establecerSistemaOperativo(String c) {
+        sistemaOperativo = c;
     }
 
-    public void establecerTipoInstitucion(String c) {
-        tipoInstitucion = c;
+    public void establecerTamanioPantalla(String c) {
+        tamanioPantalla = c;
     }
 
-    public void establecerNumeroAlumnos(int c) {
-        numeroAlumnos = c;
+    public void establecerCostoInicial(double c) {
+        costoInicial = c;
     }
 
-    public void establecerNumeroDocentes(int c) {
-        numeroDocentes = c;
+    public void establecerIvaPorcentaje(double c) {
+        ivaPorcentaje = c;
     }
 
-    public void establecerNumeroSedes(int c) {
-        numeroSedes = c;
+    public void calcularIvaCosto(double c) {
+        ivaCosto = (ivaPorcentaje*costoInicial)/100;
     }
 
-    public void establecerGastosEstudiante(double c) {
-        gastosEstudiante = c;
+    public void calcularCostoFinal(double c) {
+        costoFinal = costoInicial + ivaCosto;
+    }
+    public void establecerDireccionMac(String c) {
+        direccionMac = c;
+    }
+    
+    public void establecerImei(String c) {
+        imei = c;
     }
 
-    public void calcularPresupuesto() {
-        presupuesto = numeroAlumnos * gastosEstudiante;
+    public String obtenerSistemaOperativo(String c) {
+        return sistemaOperativo;
     }
 
-    public String obtenerNombreInstitucion() {
-        return nombreInstitucion;
+    public String obtenerTamanioPantalla(double c ) {
+        return tamanioPantalla;
     }
 
-    public String obtenerTipoInstitucion() {
-        return tipoInstitucion;
+    public double obtenerIvaPorcentaje(double c) {
+        return ivaPorcentaje;
     }
 
-    public int obtenerNumeroAlumnos() {
-        return numeroAlumnos;
+    public double obtenerIvaCosto(double c) {
+        return ivaCosto;
     }
 
-    public int obtenerNumeroDocentes() {
-        return numeroDocentes;
+    public double obtenerNumeroSedes() {
+        return costoFinal;
     }
 
-    public int obtenerNumeroSedes() {
-        return numeroSedes;
+    public String obtenerDireccionMac(String c) {
+        return direccionMac;
     }
 
-    public double obtenerGastosEstudiante() {
-        return gastosEstudiante;
-    }
-
-    public double obtenerPresupuesto() {
-        return presupuesto;
+    public String obtenerImei(String c) {
+        return imei;
     }
 }
 
-}
+
