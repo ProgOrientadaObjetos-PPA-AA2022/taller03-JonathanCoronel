@@ -8,7 +8,7 @@ import paquete02.InstitucionEducativa;
 
 /**
  *
- * @author SALA I
+ * @author JonathanCoronel
  */
 public class Ejecutor {
 
@@ -27,7 +27,7 @@ public class Ejecutor {
 
         inst1.calcularPresupuesto();
 
-        System.out.printf("Datos del la Institucion 1\n\nNombre: %s\n"
+        System.out.printf("Datos del la Institucion 1\n\nNombre de la Institucion: %s\n"
                 + "Tipo de Institucion: %s\nNumero de alumnos: %d\n"
                 + "Numero de Docentes: %d\nNumero de Sedes: %d\n"
                 + "Gastos proyectados: %.2f\nPresupuesto: %.2f\n\n",
@@ -43,8 +43,8 @@ public class Ejecutor {
         inst2.establecerNumeroSedes(7);
         inst2.establecerGastosEstudiante(140.5);
         inst2.calcularPresupuesto();
-
-        System.out.printf("Datos del la Institucion 2\n\nNombre: %s\n"
+        System.out.println("---------------------------------------");
+        System.out.printf("Datos del la Institucion 2\n\nNombre de la Institucion: %s\n"
                 + "Tipo de Institucion: %s\nNumero de alumnos: %d\n"
                 + "Numero de Docentes: %d\nNumero de Sedes: %d\n"
                 + "Gastos proyectados: %.2f\nPresupuesto: %.2f\n\n",
@@ -53,5 +53,5 @@ public class Ejecutor {
                 inst2.obtenerNumeroSedes(), inst2.obtenerGastosEstudiante(),
                 inst2.obtenerPresupuesto());
     }
-  
+
 }

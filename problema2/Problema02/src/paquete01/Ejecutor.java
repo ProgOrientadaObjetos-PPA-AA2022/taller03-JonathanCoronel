@@ -8,7 +8,7 @@ import paquete02.EquivalenteHora;
 
 /**
  *
- * @author SALA I
+ * @author JonathanCoronel
  */
 public class Ejecutor {
 
@@ -33,7 +33,7 @@ public class Ejecutor {
         hora2.calcularMinutos();
         hora2.calcularSegundos();
         hora2.calcularDias();
-
+        System.out.println("---------------------------------------");
         System.out.printf("Convertidor 2\n\nNumero de Horas: %.2f\n"
                 + "Numero de Minutos: %.2f\nNumero de Segundos: %.2f\n"
                 + "Numero de Dias: %.2f\n\n",

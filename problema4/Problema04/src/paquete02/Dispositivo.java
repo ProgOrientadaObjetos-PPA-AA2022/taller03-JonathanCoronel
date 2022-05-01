@@ -6,7 +6,7 @@ package paquete02;
 
 /**
  *
- * @author SALA I
+ * @author JonathanCoronel
  */
 public class Dispositivo {
     private String sistemaOperativo;
@@ -35,11 +35,11 @@ public class Dispositivo {
         ivaPorcentaje = c;
     }
 
-    public void calcularIvaCosto(double c) {
+    public void calcularIvaCosto() {
         ivaCosto = (ivaPorcentaje*costoInicial)/100;
     }
 
-    public void calcularCostoFinal(double c) {
+    public void calcularCostoFinal() {
         costoFinal = costoInicial + ivaCosto;
     }
     public void establecerDireccionMac(String c) {
@@ -50,31 +50,35 @@ public class Dispositivo {
         imei = c;
     }
 
-    public String obtenerSistemaOperativo(String c) {
+    public String obtenerSistemaOperativo() {
         return sistemaOperativo;
     }
 
-    public String obtenerTamanioPantalla(double c ) {
+    public String obtenerTamanioPantalla( ) {
         return tamanioPantalla;
     }
 
-    public double obtenerIvaPorcentaje(double c) {
+    public double obtenerCostoInicial( ) {
+        return costoInicial;
+    }
+
+    public double obtenerIvaPorcentaje() {
         return ivaPorcentaje;
     }
 
-    public double obtenerIvaCosto(double c) {
+    public double obtenerIvaCosto() {
         return ivaCosto;
     }
 
-    public double obtenerNumeroSedes() {
+    public double obtenerCostoFinal() {
         return costoFinal;
     }
 
-    public String obtenerDireccionMac(String c) {
+    public String obtenerDireccionMac() {
         return direccionMac;
     }
 
-    public String obtenerImei(String c) {
+    public String obtenerImei() {
         return imei;
     }
 }

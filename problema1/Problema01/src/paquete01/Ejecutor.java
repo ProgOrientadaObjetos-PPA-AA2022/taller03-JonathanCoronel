@@ -25,8 +25,7 @@ public class Ejecutor {
         terreno1.calcularArea();
         terreno1.calcularCostoTerreno();
 
-        // Se hace uso de los métodos obtener para presentar en pantalla lo 
-        // requerido
+
         System.out.printf("Datos del terreno 1\n\nAncho del Terreno: %.2f\n"
                 + "Largo del Terreno: %.2f\nValor metro cuadrado: %.2f\n"
                 + "Area del Terreno: %.2f\nCosto del Terreno: %.2f\n\n",
@@ -40,6 +39,7 @@ public class Ejecutor {
 
         terreno2.calcularArea();
         terreno2.calcularCostoTerreno();
+        System.out.println("---------------------------------------");
         System.out.printf("Datos del terreno 2\n\nAncho del Terreno: %.2f\n"
                 + "Largo del Terreno: %.2f\nValor metro cuadrado: %.2f\n"
                 + "Area del Terreno: %.2f\nCosto del Terreno: %.2f\n",

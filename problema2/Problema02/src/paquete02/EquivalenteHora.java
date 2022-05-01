@@ -6,7 +6,7 @@ package paquete02;
 
 /**
  *
- * @author SALA I
+ * @author JonathanCoronel
  */
 public class EquivalenteHora {
     private double hora;
